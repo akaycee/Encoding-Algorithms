@@ -147,7 +147,8 @@ def doHuffman(file_name):
     end = timer()
     encode_time = end - start
 
-    with open("huffman_encoded.txt", "w+") as f:
+    enc_msg_file = "./Encoded_Files/" + file_name.split('/')[-1].split('.')[0] + "_Huffman_encoded"
+    with open(enc_msg_file, "w+") as f:
         f.write(encoding)
     # print("Encoded output", encoding)
 
@@ -161,7 +162,8 @@ def doHuffman(file_name):
     else:
         print("Original and Decoded file DO NOT MATCh")
 
-    with open("huffman_decoded.txt", "w+") as f:
+    decode_to_file = "./Decoded_Files/" + file_name.split('/')[-1].split('.')[0] + "_Huffman_decoded"
+    with open(decode_to_file, "w+") as f:
         f.write(encoding)
 
     print("data size = ", datasize)
