@@ -1,0 +1,6 @@
+./Encoded_Files/*
+./Decoded_Files/*
+LZW Encoding.ipynb
+huffman_encoded.txt
+huffman_decoded.txt
+Encoding Algorithms.pptx
